@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinning Arrow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Level Select -->
+  <div id="level-select">
+    <div id="ls-content">
+      <h1 id="ls-title">Spinning Arrow</h1>
+      <p id="ls-best"></p>
+      <div id="level-grid"></div>
+    </div>
+  </div>
+
+  <!-- Game -->
+  <div id="game-wrapper" class="hidden">
+    <div id="ui">
+      <button id="menu-btn">&#8592; Menu</button>
+      <div id="level-display">Level <span id="level-num">1</span> / 25</div>
+      <div id="arrows-display">Arrows: <span id="arrows-left">5</span></div>
+    </div>
+    <canvas id="gameCanvas"></canvas>
+  </div>
+
+  <!-- Overlay -->
+  <div id="overlay" class="hidden">
+    <div id="overlay-box">
+      <div id="overlay-title"></div>
+      <div id="overlay-sub"></div>
+      <button id="overlay-btn"></button>
+      <button id="overlay-btn2" class="hidden"></button>
+      <button id="overlay-menu-btn">Level Select</button>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
